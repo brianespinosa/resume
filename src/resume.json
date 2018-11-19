@@ -1,0 +1,8 @@
+{
+  "user": {
+    "first_name": "Brian",
+    "last_name": "Espinosa",
+    "phone": "{{phone}}",
+    "email": "{{email}}"
+  }
+}
