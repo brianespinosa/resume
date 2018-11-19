@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo                 from '../logo.svg';
 import styles               from './App.module.css';
+import data                 from '../resume.json';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className={styles.root}>
         <header className={styles.header}>
           <img src={logo} className={styles.logo} alt="logo" />
+          <h1>{data.user.first_name}</h1>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
