@@ -1,0 +1,16 @@
+.root {
+  padding: 1em;
+  box-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+.root + .root {
+  /* margin-top: 1em; */
+}
+
+.root > *:first-child {
+  margin-top: 0;
+}
+
+.root > *:last-child {
+  margin-bottom: 0;
+}

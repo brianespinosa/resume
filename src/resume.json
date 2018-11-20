@@ -1,10 +1,49 @@
 {
   "user": {
-    "first_name": "Brian",
-    "last_name": "Espinosa",
+    "first_name": "First",
+    "last_name": "Last",
     "phone": "{{phone}}",
     "email": "{{email}}"
   },
-  "jobs" : [],
+  "config": {
+  },
+  "jobs" : [
+    {
+      "company": "Company Name 1",
+      "job_title": "Job Title",
+      "date_start": "2015-06-01",
+      "date_end" : null,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
+      "bullets": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Lorem ipsum dolor sit amet, consectetur.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi sapiente officia, doloremque tenetur?"
+      ]
+    },
+    {
+      "company": "Company Name 2",
+      "job_title": "Job Title",
+      "date_start": "2012-06-01",
+      "date_end" : "2015-06-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
+      "bullets": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Lorem ipsum dolor sit amet, consectetur.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi sapiente officia, doloremque tenetur?"
+      ]
+    },
+    {
+      "company": "Company Name 3",
+      "job_title": "Job Title",
+      "date_start": "2009-06-01",
+      "date_end" : "2012-04-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
+      "bullets": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Lorem ipsum dolor sit amet, consectetur.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi sapiente officia, doloremque tenetur?"
+      ]
+    }
+  ],
   "education": []
 }
