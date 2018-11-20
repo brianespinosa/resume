@@ -4,5 +4,7 @@
     "last_name": "Espinosa",
     "phone": "{{phone}}",
     "email": "{{email}}"
-  }
+  },
+  "jobs" : [],
+  "education": []
 }
