@@ -3,12 +3,14 @@ import styles from './Header.module.css';
 import UserContext from '../../context/UserContext';
 
 const Header = () => {
-  const user = useContext(UserContext);
+  const { email, first_name, last_name, phone } = useContext(UserContext);
   return (
     <header className={styles.root}>
       <h1>
-        {user.first_name} {user.last_name}
+        {first_name} {last_name}
       </h1>
+      <p>{phone}</p>
+      <p>{email}</p>
     </header>
   );
 };

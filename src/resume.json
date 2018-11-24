@@ -2,7 +2,7 @@
   "user": {
     "first_name": "First",
     "last_name": "Last",
-    "phone": "{{phone}}",
+    "phone": "555.555.5555",
     "email": "user@domain.com"
   },
   "config": {},
