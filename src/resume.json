@@ -5,14 +5,13 @@
     "phone": "{{phone}}",
     "email": "user@domain.com"
   },
-  "config": {
-  },
-  "jobs" : [
+  "config": {},
+  "jobs": [
     {
       "company": "Company Name 1",
       "job_title": "Job Title",
       "date_start": "2015-06-01",
-      "date_end" : null,
+      "date_end": null,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
       "bullets": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -24,7 +23,7 @@
       "company": "Company Name 2",
       "job_title": "Job Title",
       "date_start": "2012-06-01",
-      "date_end" : "2015-06-01",
+      "date_end": "2015-06-01",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
       "bullets": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -36,7 +35,7 @@
       "company": "Company Name 3",
       "job_title": "Job Title",
       "date_start": "2009-06-01",
-      "date_end" : "2012-04-01",
+      "date_end": "2012-04-01",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
       "bullets": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
