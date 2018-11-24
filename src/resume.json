@@ -3,7 +3,7 @@
     "first_name": "First",
     "last_name": "Last",
     "phone": "{{phone}}",
-    "email": "{{email}}"
+    "email": "user@domain.com"
   },
   "config": {
   },
