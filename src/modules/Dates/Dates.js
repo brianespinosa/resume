@@ -3,9 +3,7 @@ import ConfigContext from '../../context/ConfigContext';
 import styles from './Dates.module.css';
 
 const Dates = ({ dateStart, dateEnd }) => {
-  const config = useContext(ConfigContext);
-
-  const { date_locale, date_options } = config;
+  const { date_locale, date_options } = useContext(ConfigContext);
 
   const StartDate = new Date(dateStart);
   const EndDate = new Date(dateEnd);

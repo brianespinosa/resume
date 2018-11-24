@@ -1,6 +1,6 @@
-import  { createContext } from 'react';
-import data               from '../resume.json';
+import { createContext } from 'react';
+import data from '../resume.json';
 
-const EducationContext = createContext(data.education)
+const EducationContext = createContext(data.education);
 
 export default EducationContext;

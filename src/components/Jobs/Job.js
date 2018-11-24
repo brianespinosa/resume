@@ -1,7 +1,7 @@
-import React   from 'react';
-import Section from '../../modules/Section';
+import React from 'react';
 import Bullets from '../../modules/Bullets';
-import Dates    from '../../modules/Dates';
+import Dates from '../../modules/Dates';
+import Section from '../../modules/Section';
 
 const Job = ({
   bullets,
@@ -11,31 +11,19 @@ const Job = ({
   description,
   job_title,
 }) => {
-  
-    return (
-      <Section>
-        {company &&
-          <h3>{company}</h3>
-        }
-        
-        {job_title &&
-          <h4>{job_title}</h4>
-        }
+  return (
+    <Section>
+      {company && <h3>{company}</h3>}
 
-        {date_start &&
-          <Dates 
-            dateStart={date_start} 
-            dateEnd={date_end}
-          />
-        }
-        
-        {description &&
-          <p>{description}</p>
-        }
-        
-        {bullets && <Bullets bullets={bullets} />}
-      </Section>
-    );
-}
+      {job_title && <h4>{job_title}</h4>}
+
+      {date_start && <Dates dateStart={date_start} dateEnd={date_end} />}
+
+      {description && <p>{description}</p>}
+
+      {bullets && <Bullets bullets={bullets} />}
+    </Section>
+  );
+};
 
 export default Job;
