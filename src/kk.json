@@ -1,0 +1,120 @@
+{
+  "user": {
+    "first_name": "Kandace",
+    "last_name": "Kaylor",
+    "phone": "555.555.5555",
+    "email": "user@domain.com",
+    "summary": {
+      "title": "Summary",
+      "content": "Senior sales professional with over 15 years industry experience, of which more than 11 years have been spent leading national accounts efforts. Specializes in effective distribution partnerships and relationship management. Scope of experience includes contract negotiation, and operations, legal & compliance related activities."
+    }
+  },
+  "config": {
+    "header_divider": "/"
+  },
+  "jobs": {
+    "title": "Experience",
+    "list": [
+      {
+        "company": "Salient Partners",
+        "job_title": "Director, Head of National Accounts",
+        "location": "San Francisco, CA",
+        "date_start": "2015-06-10",
+        "date_end": null,
+        "bullets": [
+          "Managed 10 month due diligence process resulting in research coverage of entire suite of MLP products (MF, SMA and LP’s) at Morgan Stanley",
+          "Actively manage relationships with key influencers & decision makers to maintain long-term recommendations of Salient Tactical Growth at Wells Fargo & Commonwealth, and research coverage at Morgan Stanley. The Wells position was established in 2012 and generates ~$1.4m in revenue annually.",
+          "Build strategic partnerships with financial intermediaries in the wirehouse and broker-dealer space, and function as primary relationship manager for 13 focus firms. Provide secondary home office support for clearing firms and select bank, TAMP and consultant relationships.",
+          "Manage all relationships across client firms, including influencers & gatekeepers, marketing, operations, due diligence analysts and senior management",
+          "Oversee all deliverables & manage communication for searches and ongoing due diligence reviews",
+          "Manage process from inception to execution for standard & non-standard contracts, and onboarding of products to intermediary platforms & research lists",
+          "Serve on Sales Leadership Team to construct budgets and develop strategic growth & distribution plans for each channel",
+          "Participate in internal advisory board for collateral content development & product marketing campaigns",
+          "Seek partnership opportunities including conference attendance, speaker presentations & co-branding opportunities",
+          "Supervise Key Accounts Manager"
+        ]
+      },
+      {
+        "company": "Forward Management LLC",
+        "job_title": "VP, National Key Accounts",
+        "location": "San Francisco, CA",
+        "date_start": "2009-06-10",
+        "date_end": "2015-06-10",
+        "bullets": [
+          "Managed distribution launch of the Forward Tactical Growth fund resulting in extensive broker-dealer and RIA exposure on live date. Fund AUM exceeded $300m six months after inception and became recommended at Wells Fargo & Commonwealth, and research covered at Morgan Stanley.",
+          "Won additional research coverage, platform recommendations and/or model allocations for Forward Commodity Long/Short, Forward Global Infrastructure, Forward International Dividend, and Forward International Small Cos. at numerous broker-dealers & wires including LPL and Morgan Stanley.",
+          "Managed selling agreement process resulting in execution & onboarding of all eligible mutual funds at Merrill Lynch",
+          "Established research coverage for Forward Credit Analysis Long/Short Fund in Merrill’s Non-Traditional Mutual Fund Guide",
+          "Served as Chief Administrative Officer from 1/2015 to 5/2015 to manage merger of Forward Funds with Salient Partners resulting in a seamless transition",
+          "Primary Relationship Manager to independent & regional broker-dealers, wirehouses and clearing firms which involved soliciting agreements, product reviews & onboarding, sponsorship opportunities and due diligence reviews",
+          "Assisted National Sales Manager in distribution planning",
+          "Supervised Events Manager & Key Accounts Manager"
+        ]
+      },
+      {
+        "company": "Kensington Funds",
+        "job_title": "VP, National Key Accounts",
+        "location": "Orinda, CA",
+        "date_start": "2007-06-10",
+        "date_end": "2009-06-10",
+        "bullets": [
+          "Initiated & developed relationships with Smith Barney & Merrill Lynch to expand distribution to the wirehouse channel",
+          "Managed process and execution of RFP resulting in the acquisition of a $50 million Kensington Global Infrastructure client",
+          "Relationship Manager to all distribution channels: independent & regional b/d's, wirehouses, TAMP's, consultants & family offices",
+          "Sales of specialized financial products investing in real estate, senior securities and infrastructure; products included mutual funds, SMA's and private funds",
+          "Assisted in launch of new mutual funds and private hedge funds",
+          "Managed & executed RFP’s"
+        ]
+      },
+      {
+        "company": "Kensington Funds",
+        "job_title": "Assistant VP, Capital Markets",
+        "location": "Orinda, CA",
+        "date_start": "2004-11-10",
+        "date_end": "2007-05-10",
+        "bullets": [
+          "Provided sales support and territory planning for Midwest Region"
+        ]
+      },
+      {
+        "company": "Kensington Funds",
+        "job_title": "Sales Associate",
+        "location": "Orinda, CA",
+        "date_start": "2003-04-10",
+        "date_end": "2004-10-10",
+        "bullets": [
+          "Provided sales and administrative support for all US regions, and served as the project manager for TA conversion"
+        ]
+      },
+      {
+        "company": "Kirlin Securities, Inc.",
+        "job_title": "Investment Banking Associate",
+        "location": "Ft. Lauderdale, FL",
+        "date_start": "2002-04-10",
+        "date_end": "2003-03-10",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia earum quam.",
+        "bullets": [
+          "Provided administrative support in private placements, IPO's and secondary offerings",
+          "Served as liaison to investment banking and retail brokerage groups",
+          "Qualified leads, solicited new clients & managed existing clients",
+          "Executed client research, technical & fundamental analysis and industry comparison"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "list": [
+      {
+        "school": "Florida Atlantic University",
+        "degree": "B.B.A. Finance",
+        "date_end": "2002-05-10",
+        "location": "Boca Raton, FL"
+      },
+      {
+        "school": "FINRA",
+        "degree": "Series 7, 63, 65"
+      }
+    ]
+  }
+}

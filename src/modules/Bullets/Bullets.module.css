@@ -1,3 +1,10 @@
 .root {
-  padding-left: 1em;
+  margin: 0.5rem 0;
+  padding-left: 1.125em;
+  line-height: 1.125em;
+  list-style-type: square;
+}
+
+.li {
+  margin: 0.25em 0;
 }

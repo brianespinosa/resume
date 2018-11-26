@@ -5,16 +5,30 @@ import styles from './Dates.module.css';
 const Dates = ({ dateStart, dateEnd }) => {
   const { date_locale, date_options } = useContext(ConfigContext);
 
-  const StartDate = new Date(dateStart);
-  const EndDate = new Date(dateEnd);
+  const displayDate = (d) => {
+    const newDate = new Date(d).toLocaleDateString(date_locale, date_options);
+
+    // Make sure we have a valid date string
+    if (newDate !== 'Invalid Date') {
+      // If so, return the date
+      return newDate;
+    } else {
+      // If not, return the string as-is
+      return d;
+    }
+  };
+
+  const firstDate = displayDate(dateStart);
+  const lastDate = displayDate(dateEnd);
 
   return (
-    <h6 className={styles.root}>
-      {StartDate.toLocaleDateString(date_locale, date_options)} to{' '}
-      {dateEnd
-        ? EndDate.toLocaleDateString(date_locale, date_options)
-        : 'present'}
-    </h6>
+    <div className={styles.root}>
+      {firstDate && <time dateTime={dateStart}>{firstDate}</time>}
+
+      {firstDate && lastDate && ' to '}
+
+      {lastDate && <time dateTime={dateStart}>{lastDate}</time>}
+    </div>
   );
 };
 

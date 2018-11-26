@@ -5,7 +5,9 @@ const Bullets = ({ bullets }) => {
   return (
     <ul className={styles.root}>
       {bullets.map((bullet) => (
-        <li key={bullet}>{bullet}</li>
+        <li className={styles.li} key={bullet}>
+          {bullet}
+        </li>
       ))}
     </ul>
   );

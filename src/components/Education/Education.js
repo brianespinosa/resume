@@ -1,31 +1,31 @@
 import React, { useContext } from 'react';
-import JobsContext from '../../context/JobsContext';
+import EducationContext from '../../context/EducationContext';
 import Section from '../../modules/Section';
 import Article from '../../modules/Article';
 
-const Jobs = () => {
-  const jobs = useContext(JobsContext) || {};
-  return jobs.list ? (
-    <Section title={jobs.title}>
-      {jobs.list.map((job) => {
+const Education = () => {
+  const education = useContext(EducationContext) || {};
+  return education.list ? (
+    <Section title={education.title}>
+      {education.list.map((job) => {
         const {
           bullets,
           date_start,
           date_end,
           description,
-          company,
+          school,
           location,
-          job_title,
+          degree,
         } = job;
         return (
           <Article
-            key={company + date_start}
+            key={school + date_start}
             bullets={bullets}
-            dates={[date_start, date_end || 'present']}
+            dates={[date_start, date_end]}
             description={description}
-            header={company}
+            header={school}
             location={location}
-            subHeader={job_title}
+            subHeader={degree}
           />
         );
       })}
@@ -33,4 +33,4 @@ const Jobs = () => {
   ) : null;
 };
 
-export default Jobs;
+export default Education;
