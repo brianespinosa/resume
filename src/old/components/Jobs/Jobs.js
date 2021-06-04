@@ -30,7 +30,7 @@ const Jobs = () => {
         );
       })}
     </Section>
-  ) : null;
+  ) : undefined;
 };
 
 export default Jobs;

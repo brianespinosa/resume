@@ -4,9 +4,8 @@ import UserContext from '../../context/UserContext';
 import Section from '../../modules/Section';
 
 const Header = () => {
-  const { email, first_name, last_name, phone, summary } = useContext(
-    UserContext
-  );
+  const { email, first_name, last_name, phone, summary } =
+    useContext(UserContext);
   return (
     <Fragment>
       <header className={styles.root}>

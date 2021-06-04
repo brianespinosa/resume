@@ -30,7 +30,7 @@ const Education = () => {
         );
       })}
     </Section>
-  ) : null;
+  ) : undefined;
 };
 
 export default Education;

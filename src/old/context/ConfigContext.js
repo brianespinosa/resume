@@ -4,8 +4,8 @@ import data from '../resume.json';
 const defaults = {
   date_locale: 'en-US',
   date_options: {
-    year: 'numeric',
     month: 'long',
+    year: 'numeric',
   },
 };
 const ConfigContext = createContext(data.config || defaults);

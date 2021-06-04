@@ -9,13 +9,7 @@ const Dates = ({ dateStart, dateEnd }) => {
     const newDate = new Date(d).toLocaleDateString(date_locale, date_options);
 
     // Make sure we have a valid date string
-    if (newDate !== 'Invalid Date') {
-      // If so, return the date
-      return newDate;
-    } else {
-      // If not, return the string as-is
-      return d;
-    }
+    return newDate !== 'Invalid Date' ? newDate : d;
   };
 
   const firstDate = displayDate(dateStart);
