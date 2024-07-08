@@ -18,5 +18,3 @@ repository:
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
 
-branches:
-  - name: main
