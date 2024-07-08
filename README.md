@@ -1,5 +1,3 @@
-# Tacoma Wedge
+# Resume
 
-Web site for Tacoma Wedge Historic District
-
-![Tacoma Wedge Historic District](/src/img/wedgehistmap.jpg)
+[![CI](https://github.com/brianespinosa/resume/actions/workflows/ci.yml/badge.svg)](https://github.com/brianespinosa/resume/actions/workflows/ci.yml)
