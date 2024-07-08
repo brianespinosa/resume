@@ -1,3 +1,5 @@
-# resume
+# Tacoma Wedge
 
-Personal static resume generator
+Web site for Tacoma Wedge Historic District
+
+![Tacoma Wedge Historic District](/src/img/wedgehistmap.jpg)
