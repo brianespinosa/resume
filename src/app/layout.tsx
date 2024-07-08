@@ -2,6 +2,8 @@ import './layout.scss';
 
 import { Metadata } from 'next';
 import { ReactElement } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +29,8 @@ export default function RootLayout({
           <h1>Resume</h1>
         </header>
         <main>{children}</main>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
