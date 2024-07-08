@@ -1,3 +1,5 @@
+_extends: .github
+
 repository:
   # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
 
@@ -16,5 +18,3 @@ repository:
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
 
-branches:
-  - name: main
