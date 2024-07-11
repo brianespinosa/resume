@@ -1,0 +1,96 @@
+{
+  "name": "Brian Espinosa",
+  "address": "514 S. Cushman Ave, Tacoma, WA 98405",
+  "phone": "253.800.9959",
+  "email": {
+    "name": "b",
+    "domain": "bje",
+    "tld": "co"
+  },
+  "experience": [
+    {
+      "company": "SurveyMonkey",
+      "roles": [
+        {
+          "title": "Director of Engineering",
+          "duration": {
+            "start": "2022-08"
+          },
+          "description": "SurveyMonkey is a global leader in online surveys and forms that empowers people with the insights they need to make decisions with speed and confidence. Our fast, intuitive feedback management platform connects millions of users worldwide with real-time AI-powered insights that drive meaningful decisions. We provide answers to more than 20 million questions every day so that people and organizations can attract new audiences, delight customers, create advocates, and extend their competitive advantage in the marketplace. Our vision is to raise the bar for human experiences by amplifying individual voices. Learn more at SurveyMonkey.com"
+        },
+        {
+          "title": "Senior Engineering Manager",
+          "duration": {
+            "start": "2022-03",
+            "end": "2022-08"
+          },
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam facere illo nam laudantium rerum? Voluptatem est, placeat ex perferendis omnis dolores qui sit."
+        }
+      ]
+    },
+    {
+      "company": "Espressive",
+      "roles": [
+        {
+          "title": "VP of Design Engineering",
+          "duration": {
+            "start": "2019-03",
+            "end": "2022-02"
+          },
+          "description": [
+            "Leading a hybrid team to build out our functional design system with a single source of truth across design, UX prototypes, design system, and UI components.",
+            "Architect of Cascara, Espressive's functional design system, adding an API layer on top of our design system allowing developers to make fewer decisions about presentation and focus more on implementation details",
+            "Focused on more consistent use of design patterns and empathy for the user. Asking the right kinds of questions to understand the problems our users face to better solve their problems"
+          ]
+        },
+        {
+          "title": "Head of Front End Engineering",
+          "duration": {
+            "start": "2016-12",
+            "end": "2019-03"
+          },
+          "description": "Architectural decisions related to building our front end React application, recruited the engineering team to support scale, and prioritized the day-to-day needs of the organization based on customer needs."
+        }
+      ]
+    },
+    {
+      "company": "PlayerPro",
+      "roles": [
+        {
+          "title": "Product Manager, UI/UX Designer, and Front End Architect",
+          "duration": {
+            "start": "2015-01",
+            "end": "2016-07"
+          },
+          "description": "A complete soccer timeline for the world's 500 million soccer players. PlayerPro is a social network for soccer players, coaches, and fans. It's a place to share your soccer life, connect with others, and improve your game."
+        }
+      ]
+    },
+    {
+      "company": "reCyph",
+      "roles": [
+        {
+          "title": "Co-Founder, Front End Designer/Developer",
+          "duration": {
+            "start": "2013-02",
+            "end": "2014-12"
+          },
+          "description": "Design and shape the UI/UX for our proprietary eCommerce and CMS systems. In addition, manage and create a majority of the front-end design and style technologies implemented in our templating systems. Manage and provide design direction for independent contractors when used for other creative work such as print, illustration and content management."
+        }
+      ]
+    },
+    {
+      "company": "SoundSwarm",
+      "roles": [
+        {
+          "title": "Founder",
+          "duration": {
+            "start": "2010-07",
+            "end": "2014-12"
+          },
+          "description": "SoundSwarm creates native iPhone and Android applications that are affordable for musicians and bands of any size allowing them to spend less time updating their social networks and more time making music."
+        }
+      ]
+    }
+  ]
+}
