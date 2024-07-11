@@ -1,4 +1,4 @@
-import './layout.scss';
+import './global.scss';
 
 import { Metadata } from 'next';
 import { ReactElement } from 'react';
@@ -25,10 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en-US'>
       <body>
-        <header>
-          <h1>Resume</h1>
-        </header>
-        <main>{children}</main>
+        {children}
         <SpeedInsights />
         <Analytics />
       </body>
