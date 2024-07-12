@@ -14,8 +14,7 @@ repository:
   homepage: https://resume.bje.co/
 
   # A comma-separated list of topics to set on the repository
-  topics: resume, react, nextjs, linkedin
+  topics: resume, react, nextjs, bulma
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
-
