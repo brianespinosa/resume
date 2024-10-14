@@ -14,7 +14,7 @@ export interface EmailLinkProperties {
 // the HTML element instead of assembling the mailto string in code.
 const handleClick = (event) => {
   event.preventDefault();
-  window.location.href =
+  globalThis.location.href =
     'mailto:' +
     event.target.dataset.name +
     '@' +
