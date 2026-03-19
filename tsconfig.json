@@ -23,7 +23,8 @@
     "paths": {
       "@/components/*": ["src/components/*"],
       "@/data": ["src/data.json"],
-      "@/lib/*": ["src/lib/*"]
+      "@/lib/*": ["src/lib/*"],
+      "@/settings": ["src/lib/settings"]
     }
   },
   "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

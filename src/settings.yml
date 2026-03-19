@@ -1,0 +1,12 @@
+# Site Settings
+# This file contains site-level configuration for the resume application.
+
+title:
+  default: 'Not Found'
+  template: '%s | Resume'
+
+metadataBase: 'https://resume.bje.co/'
+
+robots: 'noindex, nofollow'
+
+lang: 'en-US'

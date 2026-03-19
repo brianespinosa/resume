@@ -4,15 +4,15 @@ import { Metadata } from 'next';
 import { ReactElement } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import settings from '@/settings';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Not Found',
-    template: '%s | Resume',
+    default: settings.title.default,
+    template: settings.title.template,
   },
-  metadataBase: new URL('https://resume.bje.co/'),
-  // Tell robots not to index OR follow links to this page
-  robots: 'noindex, nofollow',
+  metadataBase: new URL(settings.metadataBase),
+  robots: settings.robots,
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: ReactElement;
 }) {
   return (
-    <html lang='en-US'>
+    <html lang={settings.lang}>
       <body>
         {children}
         <SpeedInsights />
