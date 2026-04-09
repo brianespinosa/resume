@@ -39,7 +39,8 @@
     "next": "16.2.3",
     "normalize.css": "8.0.1",
     "react": "19.2.5",
-    "react-dom": "19.2.5"
+    "react-dom": "19.2.5",
+    "react-markdown": "10.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.11",
