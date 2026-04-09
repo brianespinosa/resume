@@ -2,7 +2,7 @@
 
 import styles from './EmailLink.module.css';
 
-export interface EmailLinkProperties {
+interface EmailLinkProperties {
   name: string;
   domain: string;
   tld: string;
@@ -12,15 +12,10 @@ export interface EmailLinkProperties {
 // We could move this scope inside the component and pass the values, but in
 // order to obfuscate the email, we are only looking at the dataset values on
 // the HTML element instead of assembling the mailto string in code.
-const handleClick = (event) => {
+const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
   event.preventDefault();
-  globalThis.location.href =
-    'mailto:' +
-    event.target.dataset.name +
-    '@' +
-    event.target.dataset.domain +
-    '.' +
-    event.target.dataset.tld;
+  const { name, domain, tld } = event.currentTarget.dataset;
+  globalThis.location.href = `mailto:${name}@${domain}.${tld}`;
 };
 
 export function EmailLink({
@@ -31,7 +26,8 @@ export function EmailLink({
   ...rest
 }: EmailLinkProperties) {
   return (
-    <a
+    <button
+      type='button'
       {...rest}
       data-name={name}
       data-domain={domain}

@@ -1,9 +1,9 @@
 import './global.scss';
 
-import { Metadata } from 'next';
-import { ReactElement } from 'react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +20,7 @@ export default function RootLayout({
   // This will be populated with nested layouts or pages
   children,
 }: {
-  children: ReactElement;
+  children: ReactNode;
 }) {
   return (
     <html lang='en-US'>
