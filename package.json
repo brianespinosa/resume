@@ -46,7 +46,7 @@
     "knip": "6.3.0",
     "lefthook": "2.1.5",
     "sass": "1.99.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "packageManager": "yarn@4.13.0"
 }
