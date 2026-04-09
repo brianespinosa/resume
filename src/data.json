@@ -1,96 +1,94 @@
 {
   "name": "Brian Espinosa",
-  "address": "514 S. Cushman Ave, Tacoma, WA 98405",
+  "address": "Tacoma, WA",
   "phone": "253.800.9959",
   "email": {
     "name": "b",
     "domain": "bje",
     "tld": "co"
   },
-  "experience": [
+  "socials": [
     {
-      "company": "SurveyMonkey",
-      "roles": [
-        {
-          "title": "Director of Engineering",
-          "duration": {
-            "start": "2022-08"
-          },
-          "description": "SurveyMonkey is a global leader in online surveys and forms that empowers people with the insights they need to make decisions with speed and confidence. Our fast, intuitive feedback management platform connects millions of users worldwide with real-time AI-powered insights that drive meaningful decisions. We provide answers to more than 20 million questions every day so that people and organizations can attract new audiences, delight customers, create advocates, and extend their competitive advantage in the marketplace. Our vision is to raise the bar for human experiences by amplifying individual voices. Learn more at SurveyMonkey.com"
-        },
-        {
-          "title": "Senior Engineering Manager",
-          "duration": {
-            "start": "2022-03",
-            "end": "2022-08"
-          },
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam facere illo nam laudantium rerum? Voluptatem est, placeat ex perferendis omnis dolores qui sit."
-        }
-      ]
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/brianjespinosa"
+    }
+  ],
+  "content": [
+    {
+      "title": "Professional Summary",
+      "text": "Engineering leader with 15+ years scaling organizations through hypergrowth and transformation, built on 25+ years of software development experience. Managed $7M+ budgets while growing teams from startup to enterprise scale. Deep expertise in platform modernization, engineering culture, and cross-functional delivery. Led international expansion, M&A integration, and technical transformations that accelerate time to value."
     },
     {
-      "company": "Espressive",
-      "roles": [
+      "title": "Work Experience",
+      "experience": [
         {
-          "title": "VP of Design Engineering",
-          "duration": {
-            "start": "2019-03",
-            "end": "2022-02"
-          },
-          "description": [
-            "Leading a hybrid team to build out our functional design system with a single source of truth across design, UX prototypes, design system, and UI components.",
-            "Architect of Cascara, Espressive's functional design system, adding an API layer on top of our design system allowing developers to make fewer decisions about presentation and focus more on implementation details",
-            "Focused on more consistent use of design patterns and empathy for the user. Asking the right kinds of questions to understand the problems our users face to better solve their problems"
+          "company": "SurveyMonkey",
+          "companyDescription": "Leading global survey platform, 1000+ employees",
+          "location": "Remote",
+          "roles": [
+            {
+              "title": "Senior Director of Engineering",
+              "duration": {
+                "start": "2022-03"
+              },
+              "description": [
+                "Lead Analyze product engineering, delivering customer-facing data insights and visualization features through team performance excellence, architectural strategy, and cross-functional execution.",
+                "Chair company-wide Gen AI adoption initiative with CTO sponsorship, leading cross-functional team across 400+ engineers. Drove adoption from 20% to 70% in three months, delivering 25% increase in developer output and 60% reduction in pull request cycle time.",
+                "Manage $7M+ budget across 50+ engineers in five teams, with oversight of one director, four engineering managers and a principal engineer.",
+                "Transformed underperforming org through strategic process improvements, achieving 3X feature delivery increase and becoming the company's highest performer, with practices driving company-wide velocity gains.",
+                "Spearheaded company-wide architectural modernization strategy, halting years-long over-budget rewrite in favor of evolutionary transformation that salvaged incomplete work and delivered immediate customer value.",
+                "Led M&A integration across 5 time zones and 4 offices, establishing a scalable Analysis platform that delivered breakthrough multi-survey capabilities and enabled enterprise competitiveness.",
+                "Established CI/CD quality framework delivering 22-point CSAT improvement (48% to 70%) and 34% reduction in support cases; adopted org-wide enabling similar quality gains across multiple teams."
+              ]
+            }
           ]
         },
         {
-          "title": "Head of Front End Engineering",
-          "duration": {
-            "start": "2016-12",
-            "end": "2019-03"
-          },
-          "description": "Architectural decisions related to building our front end React application, recruited the engineering team to support scale, and prioritized the day-to-day needs of the organization based on customer needs."
+          "company": "Espressive",
+          "companyDescription": "Series B ITSM AI/SaaS startup, scaled to 50+ engineers",
+          "location": "Santa Clara, CA",
+          "roles": [
+            {
+              "title": "VP of Design Engineering",
+              "duration": {
+                "start": "2016-12",
+                "end": "2022-02"
+              },
+              "description": [
+                "Built engineering and design teams from 0-to-1; developed organizational structure, defined UX strategy, and established recruiting practices that attracted top engineering talent during rapid company growth.",
+                "Created engineering leadership program, achieving 100% internal promotion rate for management roles and eliminating external hiring costs throughout tenure.",
+                "Partnered with CEO and CPO to architect extensible platform enabling strategic pivot to incident deflection, driving 200%+ increase in deal sizes, reducing churn, and contributing to patent portfolio.",
+                "Established engineering operations for the company's Guadalajara office; scaled development team from zero to 30+ engineers while developing hiring strategies and establishing company culture.",
+                "Orchestrated consolidation of disparate customer-facing applications across multiple tech stacks, creating cohesive customer experience and reducing time-to-release by over 50%.",
+                "Implemented agile development and distributed communication framework, designing process standards that enabled efficient distributed and cross-functional collaboration and sustained development velocity during scaling."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "PlayerPro",
+          "companyDescription": "Sports analytics platform",
+          "location": "San Francisco, CA",
+          "roles": [
+            {
+              "title": "Head of Engineering",
+              "duration": {
+                "start": "2015-01",
+                "end": "2016-07"
+              },
+              "description": [
+                "3rd full-time hire, reported directly to CEO. Relocated to Merida, Mexico for 9 months to build engineering and design teams from scratch, establishing PlayerPro's offshore development capability.",
+                "Led engineering and design teams in cross-functional product development, launching a player data platform and establishing technical architecture for sports analytics solutions.",
+                "Delivered technical platform and data architecture that enabled strategic partnerships with international sports organizations, including Liga MX and La Liga, expanding market reach across multiple regions."
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "company": "PlayerPro",
-      "roles": [
-        {
-          "title": "Product Manager, UI/UX Designer, and Front End Architect",
-          "duration": {
-            "start": "2015-01",
-            "end": "2016-07"
-          },
-          "description": "A complete soccer timeline for the world's 500 million soccer players. PlayerPro is a social network for soccer players, coaches, and fans. It's a place to share your soccer life, connect with others, and improve your game."
-        }
-      ]
-    },
-    {
-      "company": "reCyph",
-      "roles": [
-        {
-          "title": "Co-Founder, Front End Designer/Developer",
-          "duration": {
-            "start": "2013-02",
-            "end": "2014-12"
-          },
-          "description": "Design and shape the UI/UX for our proprietary eCommerce and CMS systems. In addition, manage and create a majority of the front-end design and style technologies implemented in our templating systems. Manage and provide design direction for independent contractors when used for other creative work such as print, illustration and content management."
-        }
-      ]
-    },
-    {
-      "company": "SoundSwarm",
-      "roles": [
-        {
-          "title": "Founder",
-          "duration": {
-            "start": "2010-07",
-            "end": "2014-12"
-          },
-          "description": "SoundSwarm creates native iPhone and Android applications that are affordable for musicians and bands of any size allowing them to spend less time updating their social networks and more time making music."
-        }
-      ]
+      "title": "Skills",
+      "text": "**Leadership:** Organizational Scaling, Strategic Planning, Cross-Functional Collaboration, Technical Roadmap Development, Stakeholder Communication, Team Building and Mentorship, Recruiting and Hiring, Platform Architecture, Compliance & Security Frameworks (SOC 2, HIPAA, PCI), Engineering Productivity, Diversity and Inclusion\n\n**Tools and Tech:** React, JavaScript, TypeScript, Java, Node, Nx, MySQL, AWS, Docker, Kafka, OpenSearch, Cloudflare, Vercel, Git, GitHub Actions, Jenkins, Circle CI, VSCode, Claude Code, GitHub Copilot, MCP, n8n, Jira, Slack, Confluence"
     }
   ]
 }

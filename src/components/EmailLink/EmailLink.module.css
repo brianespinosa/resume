@@ -1,5 +1,0 @@
-._ {
-  &::after {
-    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
-  }
-}
