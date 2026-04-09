@@ -10,6 +10,7 @@ See `README.md` for repository overview and contents.
 
 This repository **REQUIRES** distributed CLAUDE.md files throughout the directory tree. Each subdirectory with significant functionality must have its own CLAUDE.md file:
 
+- `.claude/CLAUDE.md` - Claude Code configuration and settings documentation
 - `.github/CLAUDE.md` - GitHub Actions workflow and Dependabot documentation
 
 **When adding new features or directories:**
@@ -40,6 +41,18 @@ When making code changes, you MUST proactively suggest updates to relevant docum
 - **Proactive identification** - After completing code changes, explicitly check if documentation has become outdated and offer to update it
 
 Do not wait for the user to ask about documentation. Identify when your changes have made documentation stale and suggest specific updates.
+
+### Worktrees
+
+**REQUIRED**: All issue work MUST be done in a git worktree, not on the main working tree.
+
+Start a worktree session using Claude's built-in flag:
+
+```
+claude --worktree <issue-name>
+```
+
+This creates an isolated checkout at `.claude/worktrees/<issue-name>` on its own branch, so multiple issues can be worked in parallel without conflict. Claude will prompt to keep or clean up the worktree on exit.
 
 ### Git Workflow
 
@@ -77,6 +90,22 @@ Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`
 - Before creating files or directories, identify the repository root with `git rev-parse --show-toplevel`
 - NEVER create files outside the repository boundary - they will not be version controlled
 - Use `git status` to confirm new files will be tracked by git
+
+### Architecture Decision Records (ADRs)
+
+ADRs are stored in `docs/adr/` and follow the naming convention `NNN-descriptive-slug.md`.
+
+**Template** (Status / Context / Decision / Consequences). Status values: `Proposed`, `Accepted`, `Deprecated`, `Superseded by ADR-NNN`.
+
+**PR checklist — for every pull request:**
+
+- **New ADR?** — If the PR introduces a significant architectural decision (new dependency, data flow pattern, tooling change, performance trade-off), create an ADR.
+- **Existing ADRs followed?** — Verify the changes comply with accepted ADRs. If a change conflicts, either revise the ADR first or explicitly note the deviation.
+- **Revise an ADR?** — If the constraints that drove a previous decision have changed, revisiting it is valid. Update the ADR's status to `Superseded by ADR-NNN` and write the replacement.
+
+### Yarn Install Warnings
+
+`yarn install` may produce warnings. All warnings MUST be resolved before closing any PR — investigate the cause and fix it (e.g. add or remove a `packageExtensions` entry in `.yarnrc.yml`, pin a transitive dependency, or update the offending package).
 
 ### Technical Review Standards
 

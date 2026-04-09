@@ -4,5 +4,5 @@ repository:
   name: resume
   description: Personal resume
   homepage: https://resume.bje.co/
-  topics: resume, react, nextjs, bulma
+  topics: resume, react, nextjs
   private: false

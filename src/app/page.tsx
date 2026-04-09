@@ -1,5 +1,5 @@
-import { Metadata } from 'next';
 import { differenceInMonths } from 'date-fns';
+import type { Metadata } from 'next';
 import { EmailLink } from '@/components/EmailLink';
 import data from '@/data';
 
@@ -15,9 +15,9 @@ export default function Home() {
       <header className='container'>
         <hgroup>
           <h1>{name}</h1>
-          <div role='group'>
+          <div>
             {address && <address>{address}</address>}
-            {phone && <a href={'tel:' + phone}>{phone}</a>}
+            {phone && <a href={`tel:${phone}`}>{phone}</a>}
             {email && <EmailLink {...email} />}
           </div>
         </hgroup>
@@ -49,7 +49,7 @@ export default function Home() {
               const years = Math.floor(diff / 12);
               const months = diff - years * 12;
 
-              const duration = years + ' yrs ' + months + ' mos';
+              const duration = `${years} yrs ${months} mos`;
 
               return (
                 <article key={job.company}>
@@ -59,44 +59,42 @@ export default function Home() {
                       <span>{duration}</span>
                     </hgroup>
                   </header>
-                  {job.roles &&
-                    job.roles.map((role) => (
-                      <section key={role.title}>
-                        <hgroup>
-                          <h4>{role.title}</h4>
-                          <span>
-                            {new Date(role.duration.start).toLocaleDateString(
+                  {job.roles?.map((role) => (
+                    <section key={role.title}>
+                      <hgroup>
+                        <h4>{role.title}</h4>
+                        <span>
+                          {new Date(role.duration.start).toLocaleDateString(
+                            'en-us',
+                            {
+                              year: 'numeric',
+                              month: 'short',
+                            },
+                          )}
+                        </span>
+                        <span>
+                          {(role.duration.end &&
+                            new Date(role.duration.end).toLocaleDateString(
                               'en-us',
                               {
                                 year: 'numeric',
                                 month: 'short',
                               },
-                            )}
-                          </span>
-                          <span>
-                            {(role.duration.end &&
-                              new Date(role.duration.end).toLocaleDateString(
-                                'en-us',
-                                {
-                                  year: 'numeric',
-                                  month: 'short',
-                                },
-                              )) ||
-                              'Present'}
-                          </span>
-                        </hgroup>
-                        {role.description &&
-                        typeof role.description === 'string' ? (
-                          <p>{role.description}</p>
-                        ) : (
-                          <ul>
-                            {role.description.map((line) => (
-                              <li key={line}>{line}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </section>
-                    ))}
+                            )) ||
+                            'Present'}
+                        </span>
+                      </hgroup>
+                      {typeof role.description === 'string' ? (
+                        <p>{role.description}</p>
+                      ) : (
+                        <ul>
+                          {role.description?.map((line) => (
+                            <li key={line}>{line}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </section>
+                  ))}
                 </article>
               );
             })}
