@@ -26,6 +26,9 @@
       "last 1 safari version"
     ]
   },
+  "resolutions": {
+    "micromatch/picomatch": "^2.3.2"
+  },
   "dependencies": {
     "@ariakit/react": "0.4.25",
     "@picocss/pico": "2.1.1",
