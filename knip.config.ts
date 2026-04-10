@@ -14,6 +14,8 @@ const config: KnipConfig = {
   ignoreBinaries: [
     // Used via npx sort-package-json in lefthook.yml.
     'sort-package-json',
+    // Used via yarn playwright install in CI and locally.
+    'playwright',
   ],
 };
 
