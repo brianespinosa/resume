@@ -2,14 +2,35 @@
 
 ## CI Workflow (`workflows/ci.yml`)
 
-Four jobs run on every push to `main` and every PR:
+Five jobs run on every push to `main`; six jobs run on PRs (`e2e` is PR-only):
 
 1. **biome** — linting and formatting via `yarn biome ci .`
 2. **knip** — dead code detection via `yarn knip --reporter github-actions`
 3. **typecheck** — TypeScript type checking via `yarn typecheck`
-4. **build** — Next.js build (needs all three above to pass first)
+4. **test** — unit tests via `yarn test` (vitest)
+5. **build** — Vercel CLI deployment (needs biome, knip, typecheck, test to pass first)
+6. **e2e** — Playwright tests against the Vercel preview URL (PR-only, needs build)
 
 Each job uses the local composite action at `.github/actions/setup/` (Node setup from `.nvmrc`, corepack, yarn cache, `yarn install --immutable`).
+
+### Build job — Vercel deployment
+
+The build job deploys via the Vercel CLI rather than Vercel's Git integration. Required secrets:
+
+| Secret | Where to set |
+|---|---|
+| `VERCEL_TOKEN` | Actions secrets + Dependabot secrets |
+| `VERCEL_ORG_ID` | Actions secrets + Dependabot secrets |
+| `VERCEL_PROJECT_ID` | Actions secrets + Dependabot secrets |
+| `VERCEL_BYPASS_SECRET` | Actions secrets + Dependabot secrets |
+
+GitHub environments required: `Preview` (PRs) and `Production` (main pushes).
+
+To get `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` run `npx vercel link` locally — outputs `.vercel/project.json` (gitignored).
+
+### E2e job — Playwright
+
+Runs only on PRs. Uses the Vercel preview URL from the build job output. Playwright browsers are cached by OS and version. Uploads `playwright-report/` as an artifact (30-day retention).
 
 ## Dependabot Auto-merge (`workflows/dependabot-auto-merge.yml`)
 

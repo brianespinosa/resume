@@ -6,9 +6,11 @@
     "build": "next build",
     "check": "biome check --write .",
     "dev": "next dev",
+    "e2e": "playwright test",
     "knip": "knip",
     "start": "next start",
-    "test": "echo \"Warning: no test specified\" && exit 0",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "browserslist": {
@@ -42,14 +44,25 @@
     "react-markdown": "10.1.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
     "@biomejs/biome": "2.4.11",
+    "@playwright/test": "1.59.1",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
     "@types/node": "25.5.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "@vitest/coverage-v8": "4.1.4",
+    "happy-dom": "20.8.9",
     "knip": "6.3.1",
     "lefthook": "2.1.5",
     "sass": "1.99.0",
-    "typescript": "6.0.2"
+    "typescript": "6.0.2",
+    "vercel": "50.42.0",
+    "vite": "8.0.8",
+    "vitest": "4.1.4"
   },
   "packageManager": "yarn@4.13.0"
 }
