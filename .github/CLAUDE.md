@@ -2,7 +2,7 @@
 
 ## CI Workflow (`workflows/ci.yml`)
 
-Six jobs run on every push to `main` and every PR:
+Five jobs run on every push to `main`; six jobs run on PRs (`e2e` is PR-only):
 
 1. **biome** — linting and formatting via `yarn biome ci .`
 2. **knip** — dead code detection via `yarn knip --reporter github-actions`
@@ -30,7 +30,7 @@ To get `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` run `npx vercel link` locally —
 
 ### E2e job — Playwright
 
-Runs only on PRs. Uses the Vercel preview URL from the build job output. Playwright browsers are cached by version. Uploads `playwright-report/` as an artifact (30-day retention).
+Runs only on PRs. Uses the Vercel preview URL from the build job output. Playwright browsers are cached by OS and version. Uploads `playwright-report/` as an artifact (30-day retention).
 
 ## Dependabot Auto-merge (`workflows/dependabot-auto-merge.yml`)
 

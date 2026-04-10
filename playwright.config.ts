@@ -1,6 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:3000';
+const rawURL = process.env.PLAYWRIGHT_BASE_URL;
+if (process.env.CI && !rawURL) {
+  throw new Error(
+    'PLAYWRIGHT_BASE_URL must be set in CI. It should come from the build job output (the Vercel preview URL).',
+  );
+}
+const baseURL = rawURL || 'http://localhost:3000';
 
 export default defineConfig({
   testDir: './e2e',

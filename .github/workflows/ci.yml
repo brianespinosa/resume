@@ -74,6 +74,7 @@ jobs:
           else
             URL=$(yarn vercel deploy --prebuilt --prod --token $VERCEL_TOKEN)
           fi
+          [[ -n "$URL" ]] || { echo "::error::vercel deploy produced no URL output"; exit 1; }
           echo "url=$URL" >> $GITHUB_OUTPUT
 
   e2e:
