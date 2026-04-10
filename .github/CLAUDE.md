@@ -5,7 +5,7 @@
 Six jobs run on every push to `main` and every PR:
 
 1. **biome** — linting and formatting via `yarn biome ci .`
-2. **knip** — dead code detection via `yarn knip --reporter github-actions` (env: `PLAYWRIGHT_BASE_URL=https://example.com` to satisfy playwright.config.ts validation)
+2. **knip** — dead code detection via `yarn knip --reporter github-actions`
 3. **typecheck** — TypeScript type checking via `yarn typecheck`
 4. **test** — unit tests via `yarn test` (vitest)
 5. **build** — Vercel CLI deployment (needs biome, knip, typecheck, test to pass first)

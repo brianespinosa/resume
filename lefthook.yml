@@ -13,3 +13,5 @@ pre-commit:
       run: yarn test
     typecheck:
       run: yarn typecheck
+    knip:
+      run: yarn knip
