@@ -16,7 +16,6 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./vitest.setup.ts'],
     exclude: ['.claude/**', 'e2e/**', 'node_modules/**'],
-    passWithNoTests: true,
     coverage: {
       enabled: true,
       provider: 'v8',
