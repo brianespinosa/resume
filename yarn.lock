@@ -1743,7 +1743,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-pdf/layout@npm:^4.5.0":
+"@react-pdf/layout@npm:^4.5.1":
   version: 4.5.1
   resolution: "@react-pdf/layout@npm:4.5.1"
   dependencies:
@@ -1806,7 +1806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-pdf/render@npm:^4.4.0":
+"@react-pdf/render@npm:^4.4.1":
   version: 4.4.1
   resolution: "@react-pdf/render@npm:4.4.1"
   dependencies:
@@ -1824,18 +1824,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-pdf/renderer@npm:4.4.0":
-  version: 4.4.0
-  resolution: "@react-pdf/renderer@npm:4.4.0"
+"@react-pdf/renderer@npm:4.4.1":
+  version: 4.4.1
+  resolution: "@react-pdf/renderer@npm:4.4.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     "@react-pdf/fns": "npm:3.1.3"
     "@react-pdf/font": "npm:^4.0.6"
-    "@react-pdf/layout": "npm:^4.5.0"
+    "@react-pdf/layout": "npm:^4.5.1"
     "@react-pdf/pdfkit": "npm:^5.0.0"
     "@react-pdf/primitives": "npm:^4.2.0"
     "@react-pdf/reconciler": "npm:^2.0.0"
-    "@react-pdf/render": "npm:^4.4.0"
+    "@react-pdf/render": "npm:^4.4.1"
     "@react-pdf/types": "npm:^2.10.0"
     events: "npm:^3.3.0"
     object-assign: "npm:^4.1.1"
@@ -1843,7 +1843,7 @@ __metadata:
     queue: "npm:^6.0.1"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/a99e58284379782d2be126e339c1c8a1d0d3633b553314a67bc0de74ddb7bf8f5ea2fe8b5fd83d722a5693874d78a6f0113b17f718e4e576e5f22a1441083ced
+  checksum: 10c0/b92c3a06d8b29015989fbd59d9b932f93b72fd295d34a68e4c4ef33fbc144fe868d350210b52309728b8581ab9764e38b499cab71675980d95b86ec8928efba0
   languageName: node
   linkType: hard
 
@@ -6803,7 +6803,7 @@ __metadata:
     "@biomejs/biome": "npm:2.4.11"
     "@picocss/pico": "npm:2.1.1"
     "@playwright/test": "npm:1.59.1"
-    "@react-pdf/renderer": "npm:4.4.0"
+    "@react-pdf/renderer": "npm:4.4.1"
     "@testing-library/dom": "npm:10.4.1"
     "@testing-library/jest-dom": "npm:6.9.1"
     "@testing-library/react": "npm:16.3.2"
