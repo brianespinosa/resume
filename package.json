@@ -65,7 +65,7 @@
     "lefthook": "2.1.5",
     "sass": "1.99.0",
     "typescript": "6.0.2",
-    "vercel": "50.44.0",
+    "vercel": "51.2.0",
     "vite": "8.0.8",
     "vitest": "4.1.4"
   },
