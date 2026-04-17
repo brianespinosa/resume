@@ -62,7 +62,7 @@
     "@vitest/coverage-v8": "4.1.4",
     "happy-dom": "20.9.0",
     "knip": "6.4.1",
-    "lefthook": "2.1.5",
+    "lefthook": "2.1.6",
     "sass": "1.99.0",
     "typescript": "6.0.3",
     "vercel": "51.4.0",
