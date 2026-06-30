@@ -37,7 +37,7 @@
     "micromatch/picomatch": "^2.3.2"
   },
   "dependencies": {
-    "@ariakit/react": "0.4.30",
+    "@ariakit/react": "0.4.31",
     "@picocss/pico": "2.1.1",
     "@react-pdf/renderer": "4.5.1",
     "@vercel/analytics": "2.0.1",
