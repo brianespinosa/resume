@@ -37,7 +37,10 @@
     "@vercel/python-analysis/minimatch": "^10.2.3",
     "micromatch/picomatch": "^2.3.2",
     "next/postcss": ">=8.5.23 <9",
-    "vite/postcss": ">=8.5.23 <9"
+    "vite/postcss": ">=8.5.23 <9",
+    "@vitejs/plugin-react/vite": ">=8.0.16 <9",
+    "@vitest/mocker/vite": ">=8.0.16 <9",
+    "vitest/vite": ">=8.0.16 <9"
   },
   "dependencies": {
     "@ariakit/react": "0.4.37",
