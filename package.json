@@ -76,7 +76,7 @@
     "typescript": "6.0.3",
     "vercel": "59.1.4",
     "vite": "8.2.1",
-    "vitest": "4.1.10"
+    "vitest": "4.1.11"
   },
   "packageManager": "yarn@4.13.0"
 }
