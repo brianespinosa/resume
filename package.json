@@ -46,7 +46,7 @@
     "vitest/vite": ">=8.0.16 <9"
   },
   "dependencies": {
-    "@ariakit/react": "0.4.37",
+    "@ariakit/react": "0.4.38",
     "@picocss/pico": "2.1.1",
     "@react-pdf/renderer": "4.8.1",
     "@vercel/analytics": "2.0.1",
