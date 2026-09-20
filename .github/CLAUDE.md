@@ -4,14 +4,14 @@
 
 Five jobs run on every push to `main`; six jobs run on PRs (`e2e` is PR-only):
 
-1. **biome** — linting and formatting via `yarn biome ci .`
-2. **knip** — dead code detection via `yarn knip --reporter github-actions`
-3. **typecheck** — TypeScript type checking via `yarn typecheck`
-4. **test** — unit tests via `yarn test` (vitest)
+1. **biome** — linting and formatting via `pnpm biome ci .`
+2. **knip** — dead code detection via `pnpm knip --reporter github-actions`
+3. **typecheck** — TypeScript type checking via `pnpm typecheck`
+4. **test** — unit tests via `pnpm test` (vitest)
 5. **build** — Vercel CLI deployment (needs biome, knip, typecheck, test to pass first)
 6. **e2e** — Playwright tests against the Vercel preview URL (PR-only, needs build)
 
-Each job uses the local composite action at `.github/actions/setup/` (Node setup from `.nvmrc`, corepack, yarn cache, `yarn install --immutable`).
+Each job uses the local composite action at `.github/actions/setup/` (Node setup from `.nvmrc`, corepack, pnpm store cache, `pnpm install --frozen-lockfile`).
 
 ### Build job — Vercel deployment
 
