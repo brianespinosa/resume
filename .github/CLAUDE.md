@@ -11,7 +11,7 @@ Five jobs run on every push to `main`; six jobs run on PRs (`e2e` is PR-only):
 5. **build** — Vercel CLI deployment (needs biome, knip, typecheck, test to pass first)
 6. **e2e** — Playwright tests against the Vercel preview URL (PR-only, needs build)
 
-Each job uses the local composite action at `.github/actions/setup/` (Node setup from `.nvmrc`, corepack, pnpm store cache, `pnpm install --frozen-lockfile`).
+Each job uses the local composite action at `.github/actions/setup/` (pnpm install via `pnpm/action-setup`, Node setup from `.nvmrc` with `cache: pnpm`, `pnpm install --frozen-lockfile`).
 
 ### Build job — Vercel deployment
 
