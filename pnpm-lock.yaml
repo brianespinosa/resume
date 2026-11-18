@@ -246,8 +246,8 @@ importers:
         specifier: 21.0.4
         version: 21.0.4
       knip:
-        specifier: 6.44.2
-        version: 6.44.2
+        specifier: 6.45.0
+        version: 6.45.0
       lefthook:
         specifier: 2.2.2
         version: 2.2.2
@@ -3047,8 +3047,8 @@ packages:
   jsonlines@0.1.1:
     resolution: {integrity: sha512-ekDrAGso79Cvf+dtm+mL8OBI2bmAOt3gssYs833De/C9NmIpWDWyUO4zPgB5x2/OhY366dkhgfPMYfwZF7yOZA==}
 
-  knip@6.44.2:
-    resolution: {integrity: sha512-6URO7pnqtOnyvSsXfW6+8C9j1lfcicxUCysXO0RgMtHTZ96HqCXh29op8iabeQW5JeIc8dJWwzSdJVWDokeScQ==}
+  knip@6.45.0:
+    resolution: {integrity: sha512-ywPAhxiJGPWD/1V5dVYawA6el74q4vgX8omkeyl0MbA1CCkdjxrvWXXVqM20a5wQWcl1NbC9ImLHYsbFEbD0Xg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -3915,8 +3915,8 @@ packages:
   uid-promise@1.0.0:
     resolution: {integrity: sha512-R8375j0qwXyIu/7R0tjdF06/sElHqbmdmWC9M2qQHpEVbvE4I5+38KJI7LUUmQMp7NVq4tKHiBMkT0NFM453Ig==}
 
-  unbash@6.0.1:
-    resolution: {integrity: sha512-0db9eS5iqybux41zLkX69nk90KTci7F7eZ+gXzEG/Q7E0tAqEBhRh5fkZvk1N7jT7QkGWqq34i8SFGPFEe1V8A==}
+  unbash@6.0.4:
+    resolution: {integrity: sha512-t3OptUArewg9OpYGDskTSlxhyLDahfmZ4d36hE44Efb1y3HRLLpzsVqwH+AwBVymP4t7pP71xN+nnduudn2awA==}
     engines: {node: '>=14'}
 
   undici-types@5.26.5:
@@ -6494,7 +6494,7 @@ snapshots:
 
   jsonlines@0.1.1: {}
 
-  knip@6.44.2:
+  knip@6.45.0:
     dependencies:
       formatly: 0.11.4
       get-tsconfig: 4.14.3
@@ -6505,9 +6505,8 @@ snapshots:
       smol-toml: 1.9.1
       strip-json-comments: 5.0.3
       tinyglobby: 0.2.17
-      unbash: 6.0.1
+      unbash: 6.0.4
       yaml: 2.9.1
-      zod: 4.6.7
 
   lefthook-android-arm64@2.2.2:
     optional: true
@@ -7575,7 +7574,7 @@ snapshots:
 
   uid-promise@1.0.0: {}
 
-  unbash@6.0.1: {}
+  unbash@6.0.4: {}
 
   undici-types@5.26.5: {}
 
